@@ -8,6 +8,14 @@ FLASK_RUN_PORT = 5000
 # pear admin flask配置
 SYSTEM_NAME = Pear Admin
 
+# PGSql配置信息
+# 数据库配置信息
+POSTGRESQL_HOST = 127.0.0.1
+POSTGRESQL_PORT = 5432
+POSTGRESQL_USERNAME = test
+POSTGRESQL_PASSWORD = test
+POSTGRESQL_DATABASE = pear-admin-flask-db
+
 # MySql配置信息
 MYSQL_HOST=127.0.0.1
 # MYSQL_HOST=dbserver
@@ -21,7 +29,7 @@ REDIS_HOST=127.0.0.1
 REDIS_PORT=6379
 
 # 密钥配置(记得改)
-SECRET_KEY='pear-admin-flask'
+SECRET_KEY='ase10e1n2eh1`e98udnadnqdqdqdq'
 
 # 邮箱配置
 MAIL_SERVER='smtp.qq.com'

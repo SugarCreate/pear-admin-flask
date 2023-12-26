@@ -3,11 +3,16 @@ import sqlparse
 import pymysql
 config = dotenv_values('.flaskenv')
 # MySql配置信息
-HOST = config.get('MYSQL_HOST') or '127.0.0.1'
-PORT = config.get('MYSQL_PORT') or 3306
-DATABASE = config.get('MYSQL_DATABASE') or 'PearAdminFlask'
-USERNAME = config.get('MYSQL_USERNAME') or 'root'
-PASSWORD = config.get('MYSQL_PASSWORD') or '123456'
+# HOST = config.get('MYSQL_HOST') or '127.0.0.1'
+# PORT = config.get('MYSQL_PORT') or 3306
+# DATABASE = config.get('MYSQL_DATABASE') or 'PearAdminFlask'
+# USERNAME = config.get('MYSQL_USERNAME') or 'root'
+# PASSWORD = config.get('MYSQL_PASSWORD') or '123456'
+HOST = config.get('POSTGRESQL_HOST') or '127.0.0.1'
+PORT = config.get('POSTGRESQL_PORT') or 3306
+DATABASE = config.get('POSTGRESQL_DATABASE') or 'PearAdminFlask'
+USERNAME = config.get('POSTGRESQL_USERNAME') or 'root'
+PASSWORD = config.get('POSTGRESQL_PASSWORD') or '123456'
 
 
 def is_exist_database():
